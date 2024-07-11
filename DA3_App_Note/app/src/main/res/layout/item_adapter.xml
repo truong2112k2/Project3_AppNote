@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/shape_item"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_height="110dp">
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#EB891B"
+        >
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="2dp"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight">
+        <TextView
+            android:id="@+id/txtShowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Show title here"
+            android:gravity="center|left|bottom"
+            android:paddingStart="10dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#EB891B"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry">
+        </TextView>
+        <TextView
+            android:id="@+id/txtSince"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="2-7-2024"
+            android:gravity="center|bottom|left"
+            android:paddingStart="10dp"
+            android:textStyle="normal"
+
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        tools:ignore="InefficientWeight">
+     <ImageButton
+         android:id="@+id/btnUpdate"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:scaleType="fitXY"
+         android:layout_marginEnd="10dp"
+         android:background="@android:color/transparent"
+         android:src="@drawable/icon_update"
+         >
+     </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_delete"
+            >
+        </ImageButton>
+
+    </LinearLayout>
+
+
+</LinearLayout>
